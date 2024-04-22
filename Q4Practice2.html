@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Q4Practice2</title>
+	<style>
+		h1{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<form class="form-group">
+		<label>Enter your name:</label>
+			<input type="text"id="name1" class="form-control" placeholder="Enter your name here">
+		<label>Grade & Section:</label>
+			<input type="text"id="grade" class="form-control" placeholder="Enter your grade and section here">
+
+		<button type='submit' class="btn btn-success" onclick="display()">Display</button>
+	</form>
+
+	<script type="text/javascript">
+		function display(){
+		var $name=document.getElementById("name1").value;
+		var $grade=document.getElementById("grade").value;
+
+		document.write("Your name is " + $name + "<br>");
+		document.write("You are from " + $grade + "<br>");
+	}
+	</script>
+</body>
+</html>
